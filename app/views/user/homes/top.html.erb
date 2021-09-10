@@ -1,0 +1,45 @@
+<div class="container-lg-fluid">
+  <div class="row cover-1 text-center mx-auto" style="height: 700px; padding: 80px 0 150px 0;">
+    <div class="col-lg mb-5">
+      <h1 class="title mx-auto mb-4">Camping Share Site</h1>
+      <h5>最高のキャンピングライフを求めて</h5>
+      <div style="margin-top: 250px;">
+        <% if user_signed_in? %>
+          <%= link_to "投稿する", new_content_path, class: "btn btn-outline-dark btn-lg" %>
+        <% elsif %>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <% if user_signed_in? %>
+    <h4 class="text-center my-3">最近の投稿</h4>
+    <div class="row text-center">
+      <% @contents.first(6).each do |content| %>
+        <div class="col-2 my-3">
+          <%= link_to content_path(content.id) do %>
+            <%= attachment_image_tag content, :content_image, :fill, 100, 100, size:'100x100', format: 'jpeg', fallback: "no_image.jpeg" %>
+          <% end %><br/>
+          <%= content.name %><br/>
+        </div>
+      <% end %>
+    </div>
+  <% elsif %>
+    <div class="row-lg text-center mx-auto" style="padding-top: 100px; font-size: 20px;">
+      <h1>About</h1>
+      <a>このサイトは、キャンプやアウトドアを趣味にしている方が</a><br />
+      <a>よりキャンプを楽しんでほしい思い作ったサイトです。</a><br />
+    </div>
+    <div class="row-lg mx-auto" style="padding: 100px 0 100px 0; font-size: 20px;">
+      <h1 class="text-center">Camping Share Siteでできること</h1>
+      <div class="col mx-auto" style="width: 60%;">
+        <ul>
+          <li>あなたが利用して良かったキャンプ場の情報を投稿する。</li>
+          <li>投稿を検索して、探したいキャンプ場を見つける。</li>
+          <li>ブックマークすることですぐに投稿を見つけることができる。</li>
+          <li>気に入った投稿は「いいね!」してください。</li>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+</div>

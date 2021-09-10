@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap";
+ @import 'font-awesome-sprockets';
+ @import 'font-awesome';
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ header {
+  color: white;
+  height: 80px;
+ }
+
+ .notice {
+  padding-left: 10px;
+  background-color: lightBlue;
+ }
+
+ .alert {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-left: 10px;
+  background-color: orange;
+ }
+
+
+ body {
+  font-family: HiraMinProN-W6;
+  background-color: rgba(255,250,220,0.3);
+  width: 100%;
+ }
+
+ .cover {
+  background: url(/assets/sky.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+ }
+
+ .cover-1 {
+  background: url(/assets/snow.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ }
+
+ .top-title {
+  font-size: 28px;
+  color: black;
+  font-family: 'Kaushan Script', cursive;
+ }
+
+ .title {
+  font-size: 70px;
+  font-family: 'Kaushan Script', cursive;
+ }
+
+ /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+ #map {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+ }
+
+ /* Optional: Makes the sample page fill the window. */
+ html,
+ body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ }

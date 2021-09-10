@@ -1,0 +1,27 @@
+<div class="container-lg-fluid mx-auto" style="width: 80%;">
+  <div class="row-lg mx-auto">
+    <h3 class="pt-3 text-center">会員一覧</h3>
+    <div class="col-lg mt-3 mb-5">
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th style="width: 20%;">ニックネーム</th>
+            <th style="width: 60%;">紹介文</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @users.each do |user| %>
+            <tr>
+              <th>
+                <%= link_to user_path(user.id) do %>
+                  <%= user.name %>
+                <% end %>
+              </th>
+              <td><%= user.introduction %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
