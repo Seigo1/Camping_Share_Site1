@@ -140,3 +140,39 @@ Processing by User::HomesController#top as HTML
 Completed 200 OK in 109ms (Views: 108.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 211.1.214.134 at 2021-09-10 11:20:51 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by User::HomesController#top as HTML
+  Rendering user/homes/top.html.erb within layouts/application
+  Rendered user/homes/top.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 473ms (Views: 450.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 211.1.214.134 at 2021-09-10 11:20:59 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.1ms)
+  Rendered users/sessions/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 105ms (Views: 92.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 211.1.214.134 at 2021-09-10 11:21:17 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88eUTQMuDw/tw10OD2+oRFM7gRBtfZLiuI0DQTrkKKvLIXePAV0RPA6ziyfL9hRFgpmJn1845diR4kZ8Pjv+vQ==", "user"=>{"email"=>"test2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test2@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.2ms)
+
+
+Processing by Users::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88eUTQMuDw/tw10OD2+oRFM7gRBtfZLiuI0DQTrkKKvLIXePAV0RPA6ziyfL9hRFgpmJn1845diR4kZ8Pjv+vQ==", "user"=>{"email"=>"test2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (0.7ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 431ms (Views: 84.6ms | ActiveRecord: 0.0ms)
+
+

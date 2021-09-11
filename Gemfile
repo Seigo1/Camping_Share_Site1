@@ -66,7 +66,11 @@ gem "refile-mini_magick"
 gem 'kaminari'
 gem 'bootstrap', '~> 4.5'
 gem 'jquery-rails'
-gem "dotenv-rails"
 gem 'ransack'
 gem 'font-awesome-sass', '~> 5.13'
 gem "geocoder"
+
+gem 'dotenv-rails'
+group :production do
+  gem 'mysql2'
+end
