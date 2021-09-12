@@ -1,7 +1,7 @@
 <div class="cover container-lg-fluid text-center" style="height: 800px; padding: 200px 0 200px 0;">
 
   <div class="p-3 m-auto" style="background-color: rgba(152,251,152,0.4); width: 400px; border-radius: 5px;">
-    <h1>ログイン</h1>
+    <h1>管理者ログイン</h1>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field mb-5">
         <%= f.label :メールアドレス %><br />
@@ -24,7 +24,5 @@
         <%= f.submit "ログイン" %>
       </div>
     <% end %>
-
-    <%= render "admins/shared/links" %>
   </div>
 </div>

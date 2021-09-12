@@ -478,3 +478,111 @@ Processing by User::HomesController#top as HTML
 Completed 200 OK in 2280ms (Views: 2279.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 211.1.214.134 at 2021-09-12 04:29:48 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by User::HomesController#top as HTML
+  Rendering user/homes/top.html.erb within layouts/application
+  Rendered user/homes/top.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 907ms (Views: 892.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 211.1.214.134 at 2021-09-12 04:29:52 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.2ms)
+  Rendered users/sessions/new.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 142ms (Views: 129.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admins/sign_in" for 211.1.214.134 at 2021-09-12 04:30:00 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 105ms (Views: 93.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/sign_up" for 211.1.214.134 at 2021-09-12 04:30:05 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::RegistrationsController#new as HTML
+  Rendering admins/registrations/new.html.erb within layouts/application
+  Rendered admins/shared/_error_messages.html.erb (0.4ms)
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 125ms (Views: 124.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 211.1.214.134 at 2021-09-12 04:30:10 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 90ms (Views: 88.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 211.1.214.134 at 2021-09-12 04:32:42 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 127ms (Views: 125.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 211.1.214.134 at 2021-09-12 04:32:47 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by User::HomesController#top as HTML
+  Rendering user/homes/top.html.erb within layouts/application
+  Rendered user/homes/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 143ms (Views: 141.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 211.1.214.134 at 2021-09-12 04:32:50 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (0.9ms)
+  Rendered users/sessions/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 132ms (Views: 129.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 211.1.214.134 at 2021-09-12 04:32:51 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 100ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 211.1.214.134 at 2021-09-12 04:32:56 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (0.8ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 96ms (Views: 94.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 211.1.214.134 at 2021-09-12 04:33:34 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 182ms (Views: 181.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 211.1.214.134 at 2021-09-12 04:34:57 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 101ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
