@@ -363,3 +363,118 @@ Processing by User::HomesController#top as HTML
 Completed 200 OK in 639ms (Views: 624.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 211.1.214.134 at 2021-09-12 02:48:39 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by User::HomesController#top as HTML
+  Rendering user/homes/top.html.erb within layouts/application
+  Rendered user/homes/top.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 3595ms (Views: 3580.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/images/snow.jpeg" for 211.1.214.134 at 2021-09-12 02:48:45 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/images/images/snow.jpeg"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 211.1.214.134 at 2021-09-12 02:50:30 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by User::HomesController#top as HTML
+  Rendering user/homes/top.html.erb within layouts/application
+  Rendered user/homes/top.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "...-url(images/sky": expected expression (e.g. 1px, bold), was ".jpeg);"
+        on line 53:41 of app/assets/stylesheets/application.scss
+>>   background-image: image-url(images/sky.jpeg);
+
+   ----------------------------------------^
+):
+    17:     <%= csrf_meta_tags %>
+    18:     <%= csp_meta_tag %>
+    19: 
+    20:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    21:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    22:     <%= csrf_meta_tags %>
+    23:   </head>
+  
+app/assets/stylesheets/application.scss:53
+app/views/layouts/application.html.erb:20:in `_app_views_layouts_application_html_erb___2077196468752037010_69908537766620'
+Started GET "/" for 211.1.214.134 at 2021-09-12 02:50:51 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by User::HomesController#top as HTML
+  Rendering user/homes/top.html.erb within layouts/application
+  Rendered user/homes/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 2292ms (Views: 2286.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/images/snow.jpeg" for 211.1.214.134 at 2021-09-12 02:50:54 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/images/images/snow.jpeg"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 211.1.214.134 at 2021-09-12 02:51:09 +0000
+Cannot render console from 211.1.214.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by User::HomesController#top as HTML
+  Rendering user/homes/top.html.erb within layouts/application
+  Rendered user/homes/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2280ms (Views: 2279.1ms | ActiveRecord: 0.0ms)
+
+
