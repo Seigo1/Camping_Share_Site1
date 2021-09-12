@@ -6,7 +6,7 @@
       <h3 class="pt-3 text-center"><%= @user.name%>のページ</h3>
     <% end %>
     <div class="text-center">
-      <%= attachment_image_tag @user, :image, :fill, 150, 150, size:'150x150', format: 'jpeg', fallback: "no_image.jpeg", style: "border-radius: 50%;" %>
+      <%= attachment_image_tag @user, :image, :fill, 150, 150, size:'150x150', format: 'jpeg', style: "border-radius: 50%;" %>
     </div>
     <div class="col-3-lg my-3">
       <table class="table table-bordered">
