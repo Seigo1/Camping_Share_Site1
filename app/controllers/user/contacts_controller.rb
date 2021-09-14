@@ -6,8 +6,15 @@ class User::ContactsController < ApplicationController
   # newアクションから入力内容を受け取り、
   # 送信ボタンを押されたらcreateアクションを実行します。
   def confirm
-    @contact = Contact.new(contact_params)
-
+    @contact = Contact.new(params[:contact].permit( :name, :email, :phone_number, :subject, :message))
+    if @contact.valid?
+      # OK。確認画面を表示
+      render :action => 'confirm'
+    else
+      # NG。入力画面を再表示
+      flash.now[:alert] = '入力内容を確認してください'
+      render :action => 'new'
+    end
   end
 
   # backアクション

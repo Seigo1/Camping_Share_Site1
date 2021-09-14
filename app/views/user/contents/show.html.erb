@@ -33,13 +33,11 @@
             <!-- 投稿者のみに編集ボタンを表示 -->
             <% if current_user.id == @content.user_id %>
               <%= link_to "編集する", edit_content_path(@content.id), class: "btn btn-success mr-3", type:"button" %>
-            <% else %>
             <% end %>
           </td>
         </tr>
         <!-- 投稿者でなければいいねボタンとブックマークを表示 -->
-        <% if current_user.id == @content.user_id %>
-        <% else %>
+        <% if current_user.id != @content.user_id %>
         <tr>
           <td colspan="2">
             <div id='favorites_buttons'>
